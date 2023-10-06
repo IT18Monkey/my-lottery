@@ -1,6 +1,9 @@
 # my-lottery
 
-> 抽奖
+> 使用electron-vue、element-plus实现的彩票应用
+> 支持功能
+1. 大乐透机选
+2. 双色球机选
 
 #### Build Setup
 
