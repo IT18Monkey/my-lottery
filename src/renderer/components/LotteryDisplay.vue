@@ -1,10 +1,20 @@
 <template>
 
   <div class="lottery-container">
-    <h1>{{title}}</h1>
+    <el-row>
+  <el-col :span="24"><div class="grid-content bg-purple-dark"><h1>{{title}}</h1></div></el-col>
+</el-row>
+<el-row>
+  <el-col :span="24">
+    <div class="grid-content bg-purple-dark">
+    上期开奖：日期：{{ lastLotteryDate}} 号码：{{ lastLotteryNumber }}
+    </div>
+  </el-col>
+</el-row>
+    
     <!-- 第二行显示按钮 -->
     <div  class="lottery-numbers">
-      上期开奖：日期：{{ lastLotteryDate}} 号码：{{ lastLotteryNumber }}
+    
     </div>
     <el-button type="primary" @click="generateNumbers(1)" class="red-button">机选一注</el-button>
     <el-button type="primary" @click="generateNumbers(5)" class="red-button">机选五注</el-button>
