@@ -25,26 +25,19 @@ getLastLottery()
 </script>
 
 
+
 <template>
-    <div class="page-container">
-      <!-- 侧边栏 -->
+  <el-container>
+    <el-container>
+   
+        <!-- 侧边栏 -->
       <Sidebar/>
-  
-      <!-- 主要内容 -->
-      <div class="main-content">
-        <LotteryDisplay  v-bind="lotteryDisplayData"/>
-      </div>
-    </div>
-  </template>
-  <style>
-  .page-container {
-    display: flex;
-    flex-direction: row;
-  }
-  
-  .main-content {
-    flex: 1; /* 主要内容区域占满剩余宽度 */
-    padding: 20px;
-  }
-  </style>
-  
+    
+      <el-container>
+        <el-main>    
+           <LotteryDisplay  v-bind="lotteryDisplayData"/>
+          </el-main>
+      </el-container>
+    </el-container>
+  </el-container>
+</template>

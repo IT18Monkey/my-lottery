@@ -6,8 +6,8 @@
     <div  class="lottery-numbers">
       上期开奖：日期：{{ lastLotteryDate}} 号码：{{ lastLotteryNumber }}
     </div>
-    <button @click="generateNumbers(1)" class="red-button">机选一注</button>
-    <button @click="generateNumbers(5)" class="red-button">机选五注</button>
+    <el-button type="primary" @click="generateNumbers(1)" class="red-button">机选一注</el-button>
+    <el-button type="primary" @click="generateNumbers(5)" class="red-button">机选五注</el-button>
        <!-- 第一行显示大乐透数字 -->
     <div v-for="numbers in numberArray" class="lottery-numbers">
       <div class="red-balls">
